@@ -106,7 +106,6 @@
     list-style: none;
     padding: 0;
     margin: 0;
-    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -2055,4 +2054,215 @@ margin-top: 1.5rem;
 
 section {
     animation: fadeIn 0.6s ease-out forwards;
+}
+
+/* ===== Creative Personality Section ===== */
+.creative-design {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(135deg, #f8f9fa 0%, #f0f4f8 100%);
+    padding: 100px 0;
+}
+
+.creative-design::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 300px;
+    background: linear-gradient(45deg, rgba(99, 102, 241, 0.1) 0%, rgba(236, 72, 153, 0.1) 100%);
+    transform: skewY(-6deg);
+    transform-origin: top left;
+    z-index: 0;
+}
+
+.creative-design .container {
+    position: relative;
+    z-index: 1;
+}
+
+.creative-design .section-header {
+    position: relative;
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.creative-design .section-subtitle {
+    color: #6366f1;
+    font-weight: 700;
+    letter-spacing: 3px;
+    font-size: 15px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.creative-design .section-subtitle::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, #6366f1, #a855f7);
+    border-radius: 3px;
+}
+
+.creative-design h2 {
+    font-size: 2.8rem;
+    font-weight: 800;
+    background: linear-gradient(45deg, #1e293b, #4f46e5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.creative-design p {
+    font-size: 1.2rem;
+    color: #4b5563;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+.creative-design .personality-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 60px;
+}
+
+.creative-design .personality-card {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    padding: 45px 30px;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.05);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border: none;
+    position: relative;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.creative-design .personality-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #6366f1, #a855f7);
+    transition: all 0.4s ease;
+}
+
+.creative-design .personality-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.1);
+}
+
+.creative-design .personality-card:hover::before {
+    height: 8px;
+}
+
+.creative-design .personality-icon {
+    width: 90px;
+    height: 90px;
+    margin: 0 auto 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+    color: white;
+    font-size: 36px;
+    border-radius: 25px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 10px 30px rgba(99, 102, 241, 0.3);
+}
+
+.creative-design .personality-card:nth-child(2) .personality-icon {
+    background: linear-gradient(135deg, #10b981 0%, #3b82f6 100%);
+    box-shadow: 0 10px 30px rgba(16, 185, 129, 0.3);
+}
+
+.creative-design .personality-card:nth-child(3) .personality-icon {
+    background: linear-gradient(135deg, #f59e0b 0%, #f97316 100%);
+    box-shadow: 0 10px 30px rgba(245, 158, 11, 0.3);
+}
+
+.creative-design .personality-card:nth-child(4) .personality-icon {
+    background: linear-gradient(135deg, #ec4899 0%, #f43f5e 100%);
+    box-shadow: 0 10px 30px rgba(236, 72, 153, 0.3);
+}
+
+.creative-design .personality-card h3 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #1e293b;
+    position: relative;
+    display: inline-block;
+}
+
+.creative-design .personality-card h3::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 3px;
+    background: #6366f1;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+.creative-design .personality-card:nth-child(2) h3::after {
+    background: #10b981;
+}
+
+.creative-design .personality-card:nth-child(3) h3::after {
+    background: #f59e0b;
+}
+
+.creative-design .personality-card:nth-child(4) h3::after {
+    background: #ec4899;
+}
+
+.creative-design .personality-card:hover h3::after {
+    width: 60px;
+}
+
+.creative-design .personality-card p {
+    font-size: 1.05rem;
+    color: #4b5563;
+    line-height: 1.8;
+    margin: 0;
+    transition: all 0.3s ease;
+}
+
+.creative-design .personality-card:hover p {
+    color: #1f2937;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .creative-design h2 {
+        font-size: 2.2rem;
+    }
+    
+    .creative-design .personality-card {
+        padding: 35px 25px;
+    }
+    
+    .creative-design .personality-icon {
+        width: 75px;
+        height: 75px;
+        font-size: 30px;
+    }
 }
