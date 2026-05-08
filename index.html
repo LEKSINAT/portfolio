@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sinat - Junior Web Developer</title>
-    <link rel="stylesheet" href="./personal-website/css/styles.css">
-    <link rel="stylesheet" href="./personal-website/css/responsive.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,6 +23,8 @@
                 <a href="#" class="active">HOME</a>
                 <a href="#about">ABOUT</a>
                 <a href="#skills">SKILLS</a>
+                <a href="#workshop">WORKSHOP</a>
+                <a href="#company">COMPANY</a>
                 <a href="#projects">PROJECTS</a>
                 <a href="#contact">CONTACT</a>
             </div>
@@ -49,7 +51,7 @@
            
             </div>
             <div class="hero-image">
-                <img src="../img/venta.png" alt="Sinat" class="profile-image">
+                <img src="/img/nat-professional.jpg" alt="Sinat" class="profile-image">
             </div>
         </div>
         
@@ -63,7 +65,7 @@
             <div class="about-content">
                 <div class="about-column">
                     <div class="about-image">
-                        <img src="../img/pic-about.PNG" alt="About Me">
+                        <img src="./img/student.nat.jpg" alt="About Me">
                     </div>
                 </div>
                 <div class="about-text">
@@ -190,7 +192,7 @@
                                 <i class="fab fa-html5"></i>
                             </div>
                             <div class="skill-details">
-                                <div class="skill-name">HTML5</div>
+                                <div class="skill-name">HTML <span class="skill-percent">90%</span></div>
                                 <div class="skill-bar">
                                     <div class="skill-level" style="width: 90%; background: #e34f26;"></div>
                                 </div>
@@ -201,9 +203,9 @@
                                 <i class="fab fa-css3-alt"></i>
                             </div>
                             <div class="skill-details">
-                                <div class="skill-name">CSS3 & SASS</div>
+                                <div class="skill-name">CSS <span class="skill-percent">88%</span></div>
                                 <div class="skill-bar">
-                                    <div class="skill-level" style="width: 85%; background: #1572b6;"></div>
+                                    <div class="skill-level" style="width: 88%; background: #1572b6;"></div>
                                 </div>
                             </div>
                         </li>
@@ -212,9 +214,20 @@
                                 <i class="fab fa-js"></i>
                             </div>
                             <div class="skill-details">
-                                <div class="skill-name">JavaScript (ES6+)</div>
+                                <div class="skill-name">JavaScript <span class="skill-percent">85%</span></div>
                                 <div class="skill-bar">
-                                    <div class="skill-level" style="width: 80%; background: #f7df1e;"></div>
+                                    <div class="skill-level" style="width: 85%; background: #f7df1e;"></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-bootstrap"></i>
+                            </div>
+                            <div class="skill-details">
+                                <div class="skill-name">Bootstrap <span class="skill-percent">82%</span></div>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 82%; background: #7952b3;"></div>
                                 </div>
                             </div>
                         </li>
@@ -230,70 +243,242 @@
                     <ul>
                         <li class="skill-item">
                             <div class="skill-icon">
-                                <i class="fab fa-python"></i>
+                                <i class="fab fa-java"></i>
                             </div>
                             <div class="skill-details">
-                                <div class="skill-name">Python</div>
+                                <div class="skill-name">Java <span class="skill-percent">78%</span></div>
                                 <div class="skill-bar">
-                                    <div class="skill-level" style="width: 80%; background: #3776ab;"></div>
+                                    <div class="skill-level" style="width: 78%; background: #f89820;"></div>
                                 </div>
                             </div>
                         </li>
                         <li class="skill-item">
                             <div class="skill-icon">
-                                <i class="fas fa-bolt"></i>
+                                <i class="fab fa-python"></i>
                             </div>
                             <div class="skill-details">
-                                <div class="skill-name">RESTful APIs</div>
+                                <div class="skill-name">Python <span class="skill-percent">82%</span></div>
                                 <div class="skill-bar">
-                                    <div class="skill-level" style="width: 90%; background: #f59e0b;"></div>
+                                    <div class="skill-level" style="width: 82%; background: #3776ab;"></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-php"></i>
+                            </div>
+                            <div class="skill-details">
+                                <div class="skill-name">PHP <span class="skill-percent">76%</span></div>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 76%; background: #777bb4;"></div>
                                 </div>
                             </div>
                         </li>
                     </ul>
                 </div>
 
-                <!-- Database & Tools -->
-                <div class="skill-category tools">
+                <!-- Database & Cache -->
+                <div class="skill-category database">
                     <div class="icon-container">
                         <i class="fas fa-database"></i>
                     </div>
-                    <h3>Database & Tools</h3>
+                    <h3>Database & Cache</h3>
                     <ul>
                         <li class="skill-item">
                             <div class="skill-icon">
                                 <i class="fas fa-table"></i>
                             </div>
                             <div class="skill-details">
-                                <div class="skill-name">MySQL</div>
+                                <div class="skill-name">MySQL <span class="skill-percent">82%</span></div>
                                 <div class="skill-bar">
-                                    <div class="skill-level" style="width: 80%; background: #336791;"></div>
+                                    <div class="skill-level" style="width: 82%; background: #336791;"></div>
                                 </div>
                             </div>
                         </li>
                         <li class="skill-item">
                             <div class="skill-icon">
-                                <i class="fab fa-git-alt"></i>
+                                <i class="fas fa-memory"></i>
                             </div>
                             <div class="skill-details">
-                                <div class="skill-name">Git & GitHub</div>
+                                <div class="skill-name">Redis <span class="skill-percent">75%</span></div>
                                 <div class="skill-bar">
-                                    <div class="skill-level" style="width: 90%; background: #f05033;"></div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="skill-item">
-                            <div class="skill-icon">
-                                <i class="fas fa-code"></i>
-                            </div>
-                            <div class="skill-details">
-                                <div class="skill-name">VS Code</div>
-                                <div class="skill-bar">
-                                    <div class="skill-level" style="width: 95%; background: #2496ed;"></div>
+                                    <div class="skill-level" style="width: 75%; background: #dc382d;"></div>
                                 </div>
                             </div>
                         </li>
                     </ul>
+                </div>
+
+                <!-- DevOps & Tools -->
+                <div class="skill-category devops">
+                    <div class="icon-container">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>DevOps & Tools</h3>
+                    <ul>
+                        <li class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-docker"></i>
+                            </div>
+                            <div class="skill-details">
+                                <div class="skill-name">Docker <span class="skill-percent">74%</span></div>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 74%; background: #2496ed;"></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="skill-details">
+                                <div class="skill-name">GitHub <span class="skill-percent">88%</span></div>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 88%; background: #24292f;"></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-paper-plane"></i>
+                            </div>
+                            <div class="skill-details">
+                                <div class="skill-name">Postman <span class="skill-percent">80%</span></div>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 80%; background: #ff6c37;"></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-jira"></i>
+                            </div>
+                            <div class="skill-details">
+                                <div class="skill-name">Jira <span class="skill-percent">78%</span></div>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 78%; background: #0052cc;"></div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Workshop Section -->
+    <section id="workshop" class="workshop-section animate-on-scroll" data-animation="fadeInUp">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">LEARNING JOURNEY</span>
+                <h2>Workshops</h2>
+                <p>Hands-on activities and events that helped me grow my technical mindset and teamwork skills.</p>
+            </div>
+
+            <div class="showcase-grid">
+                <article class="showcase-card">
+                    <div class="showcase-image">
+                        <img src="./img/workshop/DevOp.jpg" alt="DevOps workshop">
+                    </div>
+                    <div class="showcase-content">
+                        <span class="showcase-tag">Workshop</span>
+                        <h3>DevOps Workshop</h3>
+                        <p>I joined a practical DevOps workshop where I explored collaboration, workflow improvement, and modern development practices in a team environment.</p>
+                    </div>
+                </article>
+
+                <article class="showcase-card">
+                    <div class="showcase-image">
+                        <img src="./img/workshop/Stem.jpg" alt="STEM workshop">
+                    </div>
+                    <div class="showcase-content">
+                        <span class="showcase-tag">Workshop</span>
+                        <h3>STEM Workshop</h3>
+                        <p>This workshop strengthened my curiosity, problem-solving approach, and confidence in learning through real activities and shared ideas.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Section -->
+    <section id="company" class="company-section animate-on-scroll" data-animation="fadeInUp">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">PROFESSIONAL EXPOSURE</span>
+                <h2>Company Visits</h2>
+                <p>Moments from company visits that helped me understand workplace culture, teamwork, and real industry environments.</p>
+            </div>
+
+            <div class="company-visit-layout">
+                <article class="company-story-card">
+                    <span class="company-story-badge">Industry Learning</span>
+                    <h3>Seeing Real Companies Up Close</h3>
+                    <p>These visits gave me a better picture of how companies work in real life, from communication inside teams to the importance of creativity, discipline, and problem-solving in the workplace.</p>
+                    <p>Each place offered a different perspective and helped me connect classroom learning with practical professional experience.</p>
+
+                    <div class="company-pill-list">
+                        <span class="company-pill">Professional culture</span>
+                        <span class="company-pill">Team collaboration</span>
+                        <span class="company-pill">Industry inspiration</span>
+                    </div>
+                </article>
+
+                <div class="company-visit-gallery">
+                    <article class="visit-card visit-card-feature">
+                        <div class="visit-card-image">
+                            <img src="./img/company-visit/Codingate.jpg" alt="Visit to Codingate">
+                        </div>
+                        <div class="visit-card-content">
+                            <span class="showcase-tag company-tag">Company Visit</span>
+                            <h3>Codingate</h3>
+                            <p>A meaningful visit that showed me a modern tech environment and how digital teams work together to build useful solutions.</p>
+                        </div>
+                    </article>
+
+                    <article class="visit-card">
+                        <div class="visit-card-image">
+                            <img src="./img/company-visit/JTrust Royal Bank.jpg" alt="Visit to J Trust Royal Bank">
+                        </div>
+                        <div class="visit-card-content">
+                            <span class="showcase-tag company-tag">Finance</span>
+                            <h3>J Trust Royal Bank</h3>
+                            <p>This visit helped me see the value of structure, responsibility, and customer trust inside a professional financial institution.</p>
+                        </div>
+                    </article>
+
+                    <article class="visit-card">
+                        <div class="visit-card-image">
+                            <img src="./img/company-visit/Bread.jpg" alt="Visit to Bread company">
+                        </div>
+                        <div class="visit-card-content">
+                            <span class="showcase-tag company-tag">Business</span>
+                            <h3>Bread</h3>
+                            <p>A great experience for observing branding, product presentation, and the way businesses create strong connections with their customers.</p>
+                        </div>
+                    </article>
+
+                    <article class="visit-card">
+                        <div class="visit-card-image">
+                            <img src="./img/company-visit/Chip Mong.jpg" alt="Visit to Chip Mong company">
+                        </div>
+                        <div class="visit-card-content">
+                            <span class="showcase-tag company-tag">Industry</span>
+                            <h3>Chip Mong</h3>
+                            <p>This visit gave me insight into a large company environment and how strong organization supports growth across different business areas.</p>
+                        </div>
+                    </article>
+
+                    <article class="visit-card">
+                        <div class="visit-card-image">
+                            <img src="./img/company-visit/Dai Chi Life.jpg" alt="Visit to Dai Chi Life company">
+                        </div>
+                        <div class="visit-card-content">
+                            <span class="showcase-tag company-tag">Corporate</span>
+                            <h3>Dai Chi Life</h3>
+                            <p>A valuable visit that helped me understand professionalism, service quality, and how companies build trust through long-term care for people.</p>
+                        </div>
+                    </article>
                 </div>
             </div>
         </div>
