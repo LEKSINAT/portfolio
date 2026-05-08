@@ -1037,26 +1037,36 @@ img {
 
 .social-links {
     display: flex;
+    align-items: center;
+    flex-wrap: wrap;
     gap: 1.5rem;
     margin-left: 1rem;
 }
 
+.social-links span {
+    color: var(--text-primary);
+    font-weight: 500;
+    margin-right: 0.5rem;
+}
+
 .social-links a {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 40px;
-    height: 40px;
-    padding-top: 100px;
-    border-radius: 50%;
-    background-color: var(--card-bg);
+    width: auto;
+    height: auto;
+    padding: 0;
+    border-radius: 0;
+    background-color: transparent;
     color: var(--text-primary);
-    transition: all 0.3s ease;
+    font-size: 1.45rem;
+    line-height: 1;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .social-links a:hover {
-    background-color: var(--primary);
-    color: white;
+    background-color: transparent;
+    color: var(--primary-light);
     transform: translateY(-3px);
 }
 
@@ -1071,6 +1081,7 @@ img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center top;
     border-radius: 50%;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
     position: relative;
@@ -2297,10 +2308,9 @@ section {
 
 .company-section {
     background:
-        radial-gradient(circle at 10% 15%, rgba(56, 189, 248, 0.28), transparent 22%),
-        radial-gradient(circle at 88% 22%, rgba(251, 191, 36, 0.18), transparent 20%),
-        radial-gradient(circle at 78% 82%, rgba(244, 114, 182, 0.16), transparent 18%),
-        linear-gradient(135deg, #08101d 0%, #102542 48%, #1f4b7a 100%);
+        radial-gradient(circle at top left, rgba(148, 163, 184, 0.18), transparent 22%),
+        radial-gradient(circle at bottom right, rgba(191, 219, 254, 0.28), transparent 26%),
+        linear-gradient(180deg, #f8fafc 0%, #eef4ff 100%);
     padding: 100px 0;
     position: relative;
     overflow: hidden;
@@ -2311,25 +2321,18 @@ section {
     position: absolute;
     inset: 0;
     background:
-        linear-gradient(120deg, rgba(255, 255, 255, 0.06), transparent 42%),
-        repeating-linear-gradient(
-            90deg,
-            rgba(255, 255, 255, 0.03) 0,
-            rgba(255, 255, 255, 0.03) 1px,
-            transparent 1px,
-            transparent 120px
-        );
+        linear-gradient(120deg, rgba(255, 255, 255, 0.7), transparent 42%);
     pointer-events: none;
 }
 
 .company-section::after {
     content: '';
     position: absolute;
-    inset: auto -120px -140px auto;
-    width: 320px;
-    height: 320px;
+    inset: auto 4% 6% auto;
+    width: 220px;
+    height: 220px;
     border-radius: 50%;
-    background: radial-gradient(circle, rgba(125, 211, 252, 0.22), transparent 68%);
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.55), transparent 68%);
     pointer-events: none;
 }
 
@@ -2344,14 +2347,14 @@ section {
     color: #1f2937;
 }
 
-.company-section .section-header h2 {
-    color: #f8fafc;
-    text-shadow: 0 10px 30px rgba(2, 6, 23, 0.25);
+.company-section .section-header h2,
+.company-section .section-header p {
+    color: #0f172a;
 }
 
 .company-section .section-header p {
-    color: #dbeafe;
     max-width: 760px;
+    color: #64748b;
 }
 
 .showcase-grid {
@@ -2417,108 +2420,23 @@ section {
     color: #4b5563;
 }
 
-.company-visit-layout {
-    display: grid;
-    grid-template-columns: minmax(300px, 0.85fr) minmax(0, 1.65fr);
-    gap: 34px;
-    align-items: start;
-}
-
-.company-story-card {
-    position: sticky;
-    top: 110px;
-    padding: 36px;
-    border-radius: 34px;
-    background:
-        linear-gradient(180deg, rgba(7, 18, 35, 0.88), rgba(11, 29, 54, 0.82)),
-        rgba(7, 18, 35, 0.82);
-    border: 1px solid rgba(191, 219, 254, 0.2);
-    box-shadow: 0 28px 70px rgba(2, 6, 23, 0.36);
-    backdrop-filter: blur(18px);
-    overflow: hidden;
-}
-
-.company-story-card::before {
-    content: '';
-    position: absolute;
-    inset: 0 0 auto 0;
-    height: 5px;
-    background: linear-gradient(90deg, #38bdf8, #f59e0b, #f472b6);
-}
-
-.company-story-card::after {
-    content: '';
-    position: absolute;
-    right: -50px;
-    bottom: -70px;
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-    background: radial-gradient(circle, rgba(56, 189, 248, 0.2), transparent 68%);
-    pointer-events: none;
-}
-
-.company-story-badge {
-    display: inline-flex;
-    align-items: center;
-    padding: 8px 16px;
-    margin-bottom: 20px;
-    border-radius: 999px;
-    background: rgba(56, 189, 248, 0.14);
-    color: #7dd3fc;
-    font-size: 0.78rem;
-    font-weight: 700;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-}
-
-.company-story-card h3 {
-    color: #f8fafc;
-    font-size: 2.15rem;
-    line-height: 1.2;
-    margin-bottom: 18px;
-    max-width: 10ch;
-}
-
-.company-story-card p {
-    color: #cbd5e1;
-    font-size: 1rem;
-    line-height: 1.8;
-    margin-bottom: 1.1rem;
-}
-
-.company-pill-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-    margin-top: 28px;
-    position: relative;
-    z-index: 1;
-}
-
-.company-pill {
-    padding: 10px 16px;
-    border-radius: 999px;
-    background: rgba(255, 255, 255, 0.09);
-    border: 1px solid rgba(255, 255, 255, 0.16);
-    color: #eff6ff;
-    font-size: 0.9rem;
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.07);
-}
-
 .company-visit-gallery {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 26px;
+    align-items: stretch;
 }
 
 .visit-card {
     position: relative;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(241, 245, 249, 0.96));
+    display: flex;
+    flex-direction: column;
+    min-height: 560px;
+    background: rgba(255, 255, 255, 0.96);
     border-radius: 30px;
     overflow: hidden;
-    border: 1px solid rgba(255, 255, 255, 0.42);
-    box-shadow: 0 22px 60px rgba(2, 6, 23, 0.22);
+    border: 1px solid rgba(226, 232, 240, 0.95);
+    box-shadow: 0 18px 45px rgba(148, 163, 184, 0.22);
     transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
@@ -2526,38 +2444,27 @@ section {
     content: '';
     position: absolute;
     inset: 0;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(14, 23, 45, 0.02));
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(15, 23, 42, 0.02));
     pointer-events: none;
 }
 
 .visit-card:hover {
-    transform: translateY(-12px);
-    box-shadow: 0 30px 70px rgba(2, 6, 23, 0.28);
-}
-
-.visit-card-feature {
-    grid-column: 1 / -1;
-    min-height: 430px;
-    display: block;
-    background: #0f172a;
-    box-shadow: 0 34px 80px rgba(2, 6, 23, 0.34);
+    transform: translateY(-8px);
+    box-shadow: 0 28px 55px rgba(148, 163, 184, 0.28);
 }
 
 .visit-card-image {
-    height: 260px;
+    height: 248px;
     overflow: hidden;
     position: relative;
-}
-
-.visit-card-feature .visit-card-image {
-    height: 100%;
+    background: linear-gradient(180deg, #f8fafc, #e2e8f0);
 }
 
 .visit-card-image::after {
     content: '';
     position: absolute;
     inset: 0;
-    background: linear-gradient(180deg, rgba(15, 23, 42, 0) 10%, rgba(15, 23, 42, 0.16) 100%);
+    background: linear-gradient(180deg, rgba(15, 23, 42, 0) 50%, rgba(15, 23, 42, 0.06) 100%);
 }
 
 .visit-card-image img {
@@ -2573,7 +2480,10 @@ section {
 }
 
 .visit-card-content {
-    padding: 28px 28px 30px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 28px 28px 32px;
     position: relative;
     z-index: 1;
 }
@@ -2581,117 +2491,59 @@ section {
 .visit-card-content h3 {
     color: #0f172a;
     margin-bottom: 12px;
-    font-size: 1.45rem;
+    font-size: clamp(1.7rem, 1.35rem + 0.55vw, 2.15rem);
+    line-height: 1.22;
 }
 
 .visit-card-content p {
     color: #475569;
     margin-bottom: 0;
-    line-height: 1.75;
+    line-height: 1.7;
+    font-size: 1rem;
 }
 
 .company-tag {
-    background: #dbeafe;
-    color: #1d4ed8;
-    box-shadow: inset 0 0 0 1px rgba(59, 130, 246, 0.12);
+    background: #e8f4ea;
+    color: #255d47;
+    box-shadow: none;
 }
 
-.company-visit-gallery .visit-card:nth-child(2) .company-tag {
-    background: #dcfce7;
-    color: #166534;
+.visit-card-meta {
+    display: inline-block;
+    margin-bottom: 18px;
+    color: #64748b;
+    font-size: 0.98rem;
 }
 
-.company-visit-gallery .visit-card:nth-child(3) .company-tag {
-    background: #fef3c7;
-    color: #92400e;
-}
-
-.company-visit-gallery .visit-card:nth-child(4) .company-tag {
-    background: #ede9fe;
-    color: #6d28d9;
-}
-
-.company-visit-gallery .visit-card:nth-child(5) .company-tag {
-    background: #ffe4e6;
-    color: #be123c;
-}
-
-.company-visit-gallery .visit-card:not(.visit-card-feature):nth-child(even) {
-    transform: translateY(28px);
-}
-
-.company-visit-gallery .visit-card:not(.visit-card-feature):nth-child(even):hover {
-    transform: translateY(16px);
-}
-
-.visit-card-feature .visit-card-image::after {
+.visit-card-intro {
+    justify-content: flex-end;
     background:
-        linear-gradient(90deg, rgba(7, 18, 35, 0.18), rgba(7, 18, 35, 0)),
-        linear-gradient(180deg, rgba(7, 18, 35, 0) 15%, rgba(7, 18, 35, 0.82) 100%);
+        linear-gradient(180deg, rgba(255, 255, 255, 0.78) 0%, rgba(255, 255, 255, 0.98) 100%);
 }
 
-.visit-card-feature .visit-card-content {
-    position: absolute;
-    right: 28px;
-    bottom: 28px;
-    max-width: 420px;
-    border-radius: 26px;
-    padding: 26px 28px;
-    background: rgba(255, 255, 255, 0.14);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(16px);
-    box-shadow: 0 14px 40px rgba(2, 6, 23, 0.22);
+.visit-card-intro .visit-card-content {
+    justify-content: flex-end;
 }
 
-.visit-card-feature .visit-card-content h3,
-.visit-card-feature .visit-card-content p {
-    color: #f8fafc;
+.visit-card-intro h3 {
+    font-size: clamp(1.9rem, 1.5rem + 0.7vw, 2.4rem);
+    margin-bottom: 14px;
 }
 
-.visit-card-feature .company-tag {
-    background: rgba(186, 230, 253, 0.2);
-    color: #e0f2fe;
-    box-shadow: inset 0 0 0 1px rgba(186, 230, 253, 0.18);
+.visit-card-intro p {
+    max-width: 18ch;
+}
+
+@media (max-width: 1280px) {
+    .company-visit-gallery {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
 }
 
 @media (max-width: 1024px) {
     .showcase-grid,
-    .company-visit-gallery,
-    .visit-card-feature {
-        grid-template-columns: 1fr;
-    }
-
-    .company-visit-layout {
-        grid-template-columns: 1fr;
-    }
-
-    .company-story-card {
-        position: static;
-    }
-
-    .visit-card-feature {
-        min-height: auto;
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-
-    .visit-card-feature .visit-card-image {
-        height: 320px;
-    }
-
-    .company-visit-gallery .visit-card:not(.visit-card-feature):nth-child(even),
-    .company-visit-gallery .visit-card:not(.visit-card-feature):nth-child(even):hover {
-        transform: none;
-    }
-
-    .visit-card-feature .visit-card-content {
-        position: relative;
-        right: auto;
-        bottom: auto;
-        max-width: none;
-        border-radius: 0;
-        background: linear-gradient(180deg, #122035, #162742);
-        box-shadow: none;
+    .company-visit-gallery {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
 
@@ -2702,31 +2554,35 @@ section {
     }
 
     .showcase-image,
-    .visit-card-image,
-    .visit-card-feature .visit-card-image {
+    .visit-card-image {
         height: 220px;
     }
 
     .showcase-content,
-    .visit-card-content,
-    .company-story-card {
+    .visit-card-content {
         padding: 22px;
-    }
-
-    .company-story-card h3 {
-        font-size: 1.6rem;
-        max-width: none;
     }
 
     .visit-card {
         border-radius: 24px;
+        min-height: 500px;
     }
 
     .visit-card-content h3 {
-        font-size: 1.28rem;
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .company-visit-gallery {
+        grid-template-columns: 1fr;
     }
 
-    .visit-card-feature .visit-card-content {
-        padding: 22px;
+    .visit-card {
+        min-height: auto;
+    }
+
+    .visit-card-intro p {
+        max-width: none;
     }
 }
