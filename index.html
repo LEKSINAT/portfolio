@@ -4,801 +4,667 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sinat - Junior Web Developer</title>
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="./css/">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Sinat Lek | Junior Web Developer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
-    <!-- Navigation -->
+    <div class="page-noise"></div>
+
     <nav class="navbar">
-        <div class="container">
-            <a href="#" class="logo">SINAT LEK</a>
-            <div class="nav-links">
-                <a href="#" class="active">HOME</a>
-                <a href="#about">ABOUT</a>
-                <a href="#skills">SKILLS</a>
-                <a href="#workshop">WORKSHOP</a>
-                <a href="#company">COMPANY</a>
-                <a href="#projects">PROJECTS</a>
-                <a href="#contact">CONTACT</a>
-            </div>
-            <a href="#contact" class="btn-talk">LET'S TALK</a>
-            <button class="hamburger">
-                <span></span>
+        <div class="container nav-inner">
+            <a href="#top" class="brand" aria-label="Sinat Lek home">
+                <span class="brand-text">
+                    <strong>Sinat Lek</strong>
+                    <small>Junior Web Developer</small>
+                </span>
+            </a>
+
+            <button class="menu-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation">
                 <span></span>
                 <span></span>
             </button>
+
+            <div class="nav-links" id="nav-links">
+                <a href="#top"><i class="fas fa-house"></i><span>Portfolio</span></a>
+                <a href="#about"><i class="far fa-user"></i><span>About Me</span></a>
+                <a href="#skills"><i class="far fa-file-lines"></i><span>Skills</span></a>
+                <a href="#projects"><i class="far fa-folder"></i><span>Projects</span></a>
+                <a href="#contact"><i class="far fa-envelope"></i><span>Contact</span></a>
+            </div>
+
+            <div class="nav-avatar" aria-hidden="true">
+                <img src="./img/student.nat.jpg" alt="">
+            </div>
         </div>
     </nav>
 
-    <!-- Preloader -->
-    <div class="preloader">
-        <div class="loader"></div>
-    </div>
-
-    <!-- Hero Section -->
-    <section class="hero animate-on-scroll" data-animation="fadeInUp">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Hello! I'm Sinat <span class="highlight">Junior Web Developer</span></h1>
-                <p>I'm an enthusiastic and dedicated junior web developer with a strong passion for creating beautiful, functional websites. While I'm at the beginning of my professional journey, I'm committed to writing clean, maintainable code and continuously expanding my skills to build engaging digital experiences.</p>
-           
-            </div>
-            <div class="hero-image">
-                <img src="/img/nat-professional.jpg" alt="Sinat" class="profile-image">
-            </div>
-        </div>
-        
-        <!-- Profile Cards Section -->
-     
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about-section animate-on-scroll" data-animation="fadeInUp">
-        <div class="container">
-            <div class="about-content">
-                <div class="about-column">
-                    <div class="about-image">
-                        <img src="./img/student.nat.jpg" alt="About Me">
-                    </div>
-                </div>
-                <div class="about-text">
-                    <div class="about-text-content">
-                        <span class="section-subtitle">WHO AM I?</span>
-                        <h2>Get to Know Me</h2>
-                        <p>I'm a passionate web developer who thrives in peaceful environments, finding inspiration in
-                            quiet moments surrounded by nature. I love working in cozy, dimly lit spaces with fresh
-                            flowers around me, as they help me stay focused and creative.</p>
-                        
-                    <div class="education-section">
-                        <h3>Education</h3>
-                        <div class="education-container">
-                            <!-- High School -->
-                            <div class="education-item">
-                                <h4>High School Certificate (BacII)</h4>
-                                <p>Tirel High School</p>
-                                <p class="small">2021 - 2024 | Graduated with distinction</p>
-                                <p>During my time at Tirel High School, I developed a strong foundation in science and
-                                    mathematics, which sparked my interest in technology and problem-solving. I actively
-                                        participated in school events and developed valuable teamwork and leadership skills.</p>
-                            </div>
-
-                            <!-- Current Education -->
-                            <div class="education-item">
-                                <h4>Associate Degree in Web Programming</h4>
-                                <p>Passerelles Numériques Cambodia</p>
-                                <p class="small">2024 - Present | Currently enrolled</p>
-                                <p>Currently pursuing my passion for technology through a comprehensive web development
-                                    program. Gaining hands-on experience in full-stack development, database management,
-                                    and modern web technologies. The program emphasizes practical skills and real-world
-                                    projects to prepare students for careers in the tech industry.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
-    </section>
-
-    <!-- Personality Section -->
-    <section id="personality" class="personality-section creative-design animate-on-scroll" data-animation="fadeInUp">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-subtitle">MY PERSONALITY</span>
-                <h2>Who I Am</h2>
-                <p>Discover what makes me unique beyond my technical skills</p>
-            </div>
-            
-            <div class="personality-grid">
-                <div class="personality-card">
-                    <div class="personality-icon">
-                        <i class="fas fa-brain"></i>
-                    </div>
-                    <h3>Calm and Focused</h3>
-                    <p>I naturally maintain a calm and composed demeanor, even in high-pressure situations. This tranquility allows me to think clearly and make well-considered decisions. My focused approach ensures that I can concentrate deeply on complex tasks and deliver consistent, high-quality results.</p>
-                </div>
-                
-                <div class="personality-card">
-                    <div class="personality-icon">
-                        <i class="fas fa-spa"></i>
-                    </div>
-                    <h3>Peaceful Environment Lover</h3>
-                    <p>I thrive in quiet, peaceful settings where I can do my best work. Whether it's a serene workspace or a natural setting, I find that tranquility enhances my creativity and productivity. This preference for calm environments helps me maintain balance and approach challenges with a clear mind.</p>
-                </div>
-                
-                <div class="personality-card">
-                    <div class="personality-icon">
-                        <i class="fas fa-comments"></i>
-                    </div>
-                    <h3>Clear Communicator</h3>
-                    <p>I believe in simple, clear, and respectful communication. Whether I'm explaining complex concepts or collaborating with team members, I strive to be direct yet considerate. My approach focuses on active listening and ensuring mutual understanding in all professional interactions.</p>
-                </div>
-                
-                <div class="personality-card">
-                    <div class="personality-icon">
-                        <i class="fas fa-search"></i>
-                    </div>
-                    <h3>Patient & Detail-Oriented</h3>
-                    <p>With a patient and meticulous approach, I ensure that no detail is overlooked in my work. I take pride in delivering precise, high-quality results by paying close attention to both the big picture and the finer points. This careful approach leads to more reliable and well-crafted solutions.</p>
-                </div>
-                
-                <div class="personality-card">
-                    <div class="personality-icon">
-                        <i class="fas fa-graduation-cap"></i>
-                    </div>
-                    <h3>Continuous Learner</h3>
-                    <p>I'm deeply motivated by learning and personal growth. Every project is an opportunity to expand my knowledge and improve my skills. I'm always exploring new technologies and methodologies to enhance my capabilities as a developer and as an individual.</p>
-                </div>
-                
-                <div class="personality-card">
-                    <div class="personality-icon">
-                        <i class="fas fa-music"></i>
-                    </div>
-                    <h3>Creative Soul</h3>
-                    <p>I find joy and inspiration in music, nature, and various creative hobbies. These passions provide balance to my technical work and often influence my problem-solving approach. I believe that diverse interests contribute to a more well-rounded perspective in both life and work.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills-section animate-on-scroll" data-animation="fadeInUp">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-subtitle">TECHNICAL SKILLS</span>
-                <h2>My Technical Stack</h2>
-                <p>Technologies and tools I use to build exceptional digital experiences</p>
-            </div>
-
-            <div class="skills-container">
-                <!-- Frontend Development -->
-                <div class="skill-category frontend">
-                    <div class="icon-container">
-                        <i class="fas fa-code"></i>
-                    </div>
-                    <h3>Frontend Development</h3>
-                    <ul>
-                        <li class="skill-item">
-                            <div class="skill-icon">
-                                <i class="fab fa-html5"></i>
-                            </div>
-                            <div class="skill-details">
-                                <div class="skill-name">HTML <span class="skill-percent">90%</span></div>
-                                <div class="skill-bar">
-                                    <div class="skill-level" style="width: 90%; background: #e34f26;"></div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="skill-item">
-                            <div class="skill-icon">
-                                <i class="fab fa-css3-alt"></i>
-                            </div>
-                            <div class="skill-details">
-                                <div class="skill-name">CSS <span class="skill-percent">88%</span></div>
-                                <div class="skill-bar">
-                                    <div class="skill-level" style="width: 88%; background: #1572b6;"></div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="skill-item">
-                            <div class="skill-icon">
-                                <i class="fab fa-js"></i>
-                            </div>
-                            <div class="skill-details">
-                                <div class="skill-name">JavaScript <span class="skill-percent">85%</span></div>
-                                <div class="skill-bar">
-                                    <div class="skill-level" style="width: 85%; background: #f7df1e;"></div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="skill-item">
-                            <div class="skill-icon">
-                                <i class="fab fa-bootstrap"></i>
-                            </div>
-                            <div class="skill-details">
-                                <div class="skill-name">Bootstrap <span class="skill-percent">82%</span></div>
-                                <div class="skill-bar">
-                                    <div class="skill-level" style="width: 82%; background: #7952b3;"></div>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
+    <main id="top">
+        <section class="hero section">
+            <div class="container">
+                <div class="hero-intro" data-reveal>
+                    <p class="hero-kicker">Junior Web Developer</p>
+                    <h1><span>Sinat Lek</span></h1>
+                    <h2>Web Developer & Problem Solver</h2>
+                    <p class="hero-summary">
+                        Creating clean digital interfaces and reliable backend features with care, clarity, and
+                        purpose.
+                    </p>
                 </div>
 
-                <!-- Backend Development -->
-                <div class="skill-category backend">
-                    <div class="icon-container">
-                        <i class="fas fa-server"></i>
-                    </div>
-                    <h3>Backend Development</h3>
-                    <ul>
-                        <li class="skill-item">
-                            <div class="skill-icon">
-                                <i class="fab fa-java"></i>
-                            </div>
-                            <div class="skill-details">
-                                <div class="skill-name">Java <span class="skill-percent">78%</span></div>
-                                <div class="skill-bar">
-                                    <div class="skill-level" style="width: 78%; background: #f89820;"></div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="skill-item">
-                            <div class="skill-icon">
-                                <i class="fab fa-python"></i>
-                            </div>
-                            <div class="skill-details">
-                                <div class="skill-name">Python <span class="skill-percent">82%</span></div>
-                                <div class="skill-bar">
-                                    <div class="skill-level" style="width: 82%; background: #3776ab;"></div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="skill-item">
-                            <div class="skill-icon">
-                                <i class="fab fa-php"></i>
-                            </div>
-                            <div class="skill-details">
-                                <div class="skill-name">PHP <span class="skill-percent">76%</span></div>
-                                <div class="skill-bar">
-                                    <div class="skill-level" style="width: 76%; background: #777bb4;"></div>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
+                <div class="hero-grid">
+                    <div class="hero-copy" data-reveal>
+                        <p class="eyebrow">About Me</p>
+                        <h3>Hello, I'm <span>Sinat Lek</span><br>Web Developer.</h3>
+                        <p class="hero-role-line"><strong>Frontend & Backend</strong> | Passionate about building meaningful digital experiences</p>
+                        <p class="hero-lead">
+                            I'm passionate about crafting clean and useful web applications that combine intuitive
+                            front-end design with practical back-end functionality.
+                        </p>
+                        <p class="hero-detail">
+                            As a web development student, I'm building my skills across both client-side and server-side
+                            technologies so I can create modern full-stack experiences that feel simple, reliable, and
+                            human.
+                        </p>
 
-                <!-- Database & Cache -->
-                <div class="skill-category database">
-                    <div class="icon-container">
-                        <i class="fas fa-database"></i>
-                    </div>
-                    <h3>Database & Cache</h3>
-                    <ul>
-                        <li class="skill-item">
-                            <div class="skill-icon">
-                                <i class="fas fa-table"></i>
-                            </div>
-                            <div class="skill-details">
-                                <div class="skill-name">MySQL <span class="skill-percent">82%</span></div>
-                                <div class="skill-bar">
-                                    <div class="skill-level" style="width: 82%; background: #336791;"></div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="skill-item">
-                            <div class="skill-icon">
-                                <i class="fas fa-memory"></i>
-                            </div>
-                            <div class="skill-details">
-                                <div class="skill-name">Redis <span class="skill-percent">75%</span></div>
-                                <div class="skill-bar">
-                                    <div class="skill-level" style="width: 75%; background: #dc382d;"></div>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- DevOps & Tools -->
-                <div class="skill-category devops">
-                    <div class="icon-container">
-                        <i class="fas fa-tools"></i>
-                    </div>
-                    <h3>DevOps & Tools</h3>
-                    <ul>
-                        <li class="skill-item">
-                            <div class="skill-icon">
-                                <i class="fab fa-docker"></i>
-                            </div>
-                            <div class="skill-details">
-                                <div class="skill-name">Docker <span class="skill-percent">74%</span></div>
-                                <div class="skill-bar">
-                                    <div class="skill-level" style="width: 74%; background: #2496ed;"></div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="skill-item">
-                            <div class="skill-icon">
+                        <div class="hero-actions">
+                            <a href="https://github.com/LEKSINAT" target="_blank" rel="noopener noreferrer" class="hero-action-tile">
                                 <i class="fab fa-github"></i>
-                            </div>
-                            <div class="skill-details">
-                                <div class="skill-name">GitHub <span class="skill-percent">88%</span></div>
-                                <div class="skill-bar">
-                                    <div class="skill-level" style="width: 88%; background: #24292f;"></div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="skill-item">
-                            <div class="skill-icon">
-                                <i class="fas fa-paper-plane"></i>
-                            </div>
-                            <div class="skill-details">
-                                <div class="skill-name">Postman <span class="skill-percent">80%</span></div>
-                                <div class="skill-bar">
-                                    <div class="skill-level" style="width: 80%; background: #ff6c37;"></div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="skill-item">
-                            <div class="skill-icon">
-                                <i class="fab fa-jira"></i>
-                            </div>
-                            <div class="skill-details">
-                                <div class="skill-name">Jira <span class="skill-percent">78%</span></div>
-                                <div class="skill-bar">
-                                    <div class="skill-level" style="width: 78%; background: #0052cc;"></div>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Workshop Section -->
-    <section id="workshop" class="workshop-section animate-on-scroll" data-animation="fadeInUp">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-subtitle">LEARNING JOURNEY</span>
-                <h2>Workshops</h2>
-                <p>Hands-on activities and events that helped me grow my technical mindset and teamwork skills.</p>
-            </div>
-
-            <div class="showcase-grid">
-                <article class="showcase-card">
-                    <div class="showcase-image">
-                        <img src="./img/workshop/DevOp.jpg" alt="DevOps workshop">
-                    </div>
-                    <div class="showcase-content">
-                        <span class="showcase-tag">Workshop</span>
-                        <h3>DevOps Workshop</h3>
-                        <p>I joined a practical DevOps workshop where I explored collaboration, workflow improvement, and modern development practices in a team environment.</p>
-                    </div>
-                </article>
-
-                <article class="showcase-card">
-                    <div class="showcase-image">
-                        <img src="./img/workshop/Stem.jpg" alt="STEM workshop">
-                    </div>
-                    <div class="showcase-content">
-                        <span class="showcase-tag">Workshop</span>
-                        <h3>STEM Workshop</h3>
-                        <p>This workshop strengthened my curiosity, problem-solving approach, and confidence in learning through real activities and shared ideas.</p>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <!-- Company Section -->
-    <section id="company" class="company-section animate-on-scroll" data-animation="fadeInUp">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-subtitle">PROFESSIONAL EXPOSURE</span>
-                <h2>Company Visits</h2>
-                <p>Moments from company visits that helped me understand workplace culture, teamwork, and real industry environments.</p>
-            </div>
-
-            <div class="company-visit-gallery">
-                <!-- <article class="visit-card visit-card-intro">
-                    <div class="visit-card-content">
-                        <span class="showcase-tag company-tag">Industry Learning</span>
-                        <h3>Seeing Real Companies Up Close</h3>
-                        <p>These visits helped me understand workplace culture, teamwork, creativity, and how real companies solve problems every day.</p>
-                    </div>
-                </article> -->
-
-                <article class="visit-card">
-                    <div class="visit-card-image">
-                        <img src="./img/company-visit/Codingate.jpg" alt="Visit to Codingate">
-                    </div>
-                    <div class="visit-card-content">
-                        <span class="showcase-tag company-tag">Technology</span>
-                        <h3>Codingate</h3>
-                        <span class="visit-card-meta">Modern tech environment</span>
-                        <p>A meaningful visit that showed me how digital teams collaborate to create useful and practical solutions.</p>
-                    </div>
-                </article>
-
-                <article class="visit-card">
-                    <div class="visit-card-image">
-                        <img src="./img/company-visit/JTrust Royal Bank.jpg" alt="Visit to J Trust Royal Bank">
-                    </div>
-                    <div class="visit-card-content">
-                        <span class="showcase-tag company-tag">Finance</span>
-                        <h3>J Trust Royal Bank</h3>
-                        <span class="visit-card-meta">Structure and responsibility</span>
-                        <p>This visit helped me see the importance of trust, professional systems, and customer care in a financial institution.</p>
-                    </div>
-                </article>
-
-                <article class="visit-card">
-                    <div class="visit-card-image">
-                        <img src="./img/company-visit/Bread.jpg" alt="Visit to Bread company">
-                    </div>
-                    <div class="visit-card-content">
-                        <span class="showcase-tag company-tag">Business</span>
-                        <h3>Bread</h3>
-                        <span class="visit-card-meta">Branding and connection</span>
-                        <p>A great experience for observing how businesses present products and build strong connections with customers.</p>
-                    </div>
-                </article>
-
-                <article class="visit-card">
-                    <div class="visit-card-image">
-                        <img src="./img/company-visit/Chip Mong.jpg" alt="Visit to Chip Mong company">
-                    </div>
-                    <div class="visit-card-content">
-                        <span class="showcase-tag company-tag">Industry</span>
-                        <h3>Chip Mong</h3>
-                        <span class="visit-card-meta">Growth through organization</span>
-                        <p>This visit gave me insight into a large company environment and how strong organization supports growth.</p>
-                    </div>
-                </article>
-
-                <article class="visit-card">
-                    <div class="visit-card-image">
-                        <img src="./img/company-visit/Dai Chi Life.jpg" alt="Visit to Dai Chi Life company">
-                    </div>
-                    <div class="visit-card-content">
-                        <span class="showcase-tag company-tag">Corporate</span>
-                        <h3>Dai Chi Life</h3>
-                        <span class="visit-card-meta">Professional service quality</span>
-                        <p>A valuable visit that helped me understand professionalism, service quality, and long-term trust.</p>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects-section animate-on-scroll" data-animation="fadeInUp">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-subtitle">MY WORK</span>
-                <h2>Recent Projects</h2>
-                <p>Explore my latest projects and creative works</p>
-            </div>
-
-            <div class="projects-grid">
-                <!-- Digital Mind Project -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <a href="https://final-web-by-sinat.vercel.app/" target="_blank" rel="noopener noreferrer">
-                            <img src="../img/digital.png " alt="Digital Mind Website Preview" style="width: 100%; height: 200px; object-fit: cover;">
-                        </a>
-                    </div>
-                    <div class="project-info">
-                        <span class="project-category" style="background: #dbeafe; color: #1e40af;">Web Application</span>
-                        <h3>Digital Mind</h3>
-                        <div class="project-date">Project: 2024</div>
-                        <p>A modern web application showcasing interactive UI/UX design and responsive layout.</p>
-                        <button class="view-certificate-btn">
-                            <a href="https://final-web-by-sinat.vercel.app/" class="fas fa-eye">View</a>
-                        </button>
-                    </div>
-                </div>
-                
-                
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="../img/UI-prototype.png" alt="Certificate of Completion">
-                    </div>
-                    <div class="project-info">
-                        <span class="project-category" style="background: #fef3c7; color: #92400e;">UI/UX Design</span>
-                        <h3>Prototype</h3>
-                        <div class="project-date">Issued: April 2023</div>
-                        <p>Interactive prototype for a smart home control dashboard with IoT device integration and
-                            real-time monitoring.</p>
-                            <button class="view-certificate-btn">
-                                <i class="fas fa-eye"></i> View
-                            </button>
+                                <span>GitHub</span>
+                            </a>
+                            <a href="#projects" class="hero-action-tile">
+                                <i class="far fa-folder-open"></i>
+                                <span>Projects</span>
+                            </a>
+                            <a href="#contact" class="hero-action-tile">
+                                <i class="far fa-envelope"></i>
+                                <span>Contact</span>
+                            </a>
                         </div>
                     </div>
-                    
-                    
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="./img/image.png" alt="Certificate of Completion">
-                        </div>
-                        <div class="project-info">
-                            <span class="project-category" style="background: #fef3c7; color: #92400e;">UI/UX Design</span>
-                            <h3>PNC Single website</h3>
-                            <div class="project-date">Issued: April 2023</div>
-                            <p>A personal portfolio website built with HTML, CSS, and JavaScript to showcase projects and skills in a
-                                clean, modern design</p>
-                            <button class="view-certificate-btn">
-                                <a href="https://my-single-webpage.vercel.app/" class="fas fa-eye">View</a>
-                            </button>
+
+                    <div class="hero-visual" data-reveal>
+                        <div class="portrait-card">
+                            <img src="./img/nat-professional.jpg" alt="Portrait of Sinat Lek">
                         </div>
                     </div>
                 </div>
             </div>
+        </section>
 
-            <div class="view-more">
-                <a href="#" class="btn btn-outline">VIEW ALL PROJECTS</a>
-            </div>
-        </div>
-    </section>
+        <section id="about" class="section about-section">
+            <div class="container">
+                <div class="section-heading" data-reveal>
+                    <p class="eyebrow">About Me</p>
+                    <h2>A developer who likes structure, softness, and meaningful work.</h2>
+                    <p class="section-intro">
+                        I enjoy quiet spaces, clear communication, and building digital experiences that feel simple to
+                        use. My personality and technical growth shape the way I design and develop.
+                    </p>
+                </div>
 
+                <div class="about-grid">
+                    <div class="about-photo-panel" data-reveal>
+                        <div class="photo-frame">
+                            <img src="./img/student.nat.jpg" alt="Sinat Lek smiling outdoors">
+                        </div>
+                    </div>
 
-    <section id="contact" class="contact-section animate-on-scroll" data-animation="fadeInUp">
-        <div class="container">
-            <div class="contact-content">
-                <div class="contact-info">
-                    <span class="section-subtitle">CONTACT</span>
-                    <h2>GET IN TOUCH</h2>
-                    <p>Have a project in mind or want to discuss potential opportunities? Feel free to reach out!</p>
-
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-envelope"></i>
+                    <div class="about-story" data-reveal>
+                        <article class="story-card">
+                            <h3>My Approach</h3>
+                            <p>
+                                I'm passionate about creating web applications that balance clean design with practical
+                                functionality. I like interfaces that feel elegant, and systems that stay dependable
+                                behind the scenes.
+                            </p>
+                            <p>
+                                As a web development student, I'm growing my front-end and back-end skills together so
+                                I can build full-stack projects with care, clarity, and curiosity.
+                            </p>
+                            <div class="tag-list">
+                                <span>Calm under pressure</span>
+                                <span>Detail-oriented</span>
+                                <span>Continuous learner</span>
+                                <span>Clear communicator</span>
                             </div>
+                        </article>
+
+                        <article class="timeline-card">
+                            <h3>Education</h3>
+                            <div class="timeline-item">
+                                <span class="timeline-year">2021 - 2024</span>
+                                <h4>High School Certificate (BacII)</h4>
+                                <p class="timeline-place">Tirel High School</p>
+                                <p>
+                                    Built a strong foundation in science and mathematics while developing teamwork,
+                                    responsibility, and confidence through school activities.
+                                </p>
+                            </div>
+                            <div class="timeline-item">
+                                <span class="timeline-year">2024 - Present</span>
+                                <h4>Associate Degree in Web Programming</h4>
+                                <p class="timeline-place">Passerelles Numeriques Cambodia</p>
+                                <p>
+                                    Gaining hands-on experience in full-stack development, database work, and modern
+                                    web technologies through practical and real-world learning.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="personality-grid" data-reveal>
+                    <article class="personality-card">
+                        <i class="fas fa-brain"></i>
+                        <h3>Calm and Focused</h3>
+                        <p>I stay composed, think clearly, and work carefully even when a task feels challenging.</p>
+                    </article>
+                    <article class="personality-card">
+                        <i class="fas fa-spa"></i>
+                        <h3>Peaceful Environment Lover</h3>
+                        <p>I do my best creative work in quiet, balanced spaces that help me stay present and sharp.</p>
+                    </article>
+                    <article class="personality-card">
+                        <i class="fas fa-comments"></i>
+                        <h3>Clear Communicator</h3>
+                        <p>I value simple, respectful communication and collaboration that helps everyone move forward.</p>
+                    </article>
+                    <article class="personality-card">
+                        <i class="fas fa-seedling"></i>
+                        <h3>Always Growing</h3>
+                        <p>I treat every new project, workshop, and challenge as a chance to learn something useful.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section skills-section">
+            <div class="container">
+                <div class="section-heading" data-reveal>
+                    <p class="eyebrow">Technical Stack</p>
+                    <h2>Tools I use to turn ideas into working products.</h2>
+                    <p class="section-intro">
+                        My strongest skills are in web development fundamentals, with growing experience across
+                        back-end, database, and collaboration tools.
+                    </p>
+                </div>
+
+                <div class="skills-grid">
+                    <article class="skill-panel skill-carousel" data-reveal data-carousel>
+                        <div class="skill-panel-head">
+                            <div class="panel-icon"><i class="fas fa-code"></i></div>
                             <div>
-                                <h4>Email</h4>
-                                <p>sinatlek026@gmail.com</p>
+                                <h3>Frontend Development</h3>
+                                <p>Interface tools I use to build clear, responsive screens.</p>
                             </div>
                         </div>
 
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-phone"></i>
+                        <div class="skill-slides">
+                            <article class="skill-slide is-active">
+                                <div class="skill-image-frame">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML logo">
+                                </div>
+                                <div class="skill-copy">
+                                    <span class="skill-tag">Frontend</span>
+                                    <h4>HTML</h4>
+                                    <p>Semantic page structure for clean layouts and accessible content.</p>
+                                </div>
+                            </article>
+                            <article class="skill-slide">
+                                <div class="skill-image-frame">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS logo">
+                                </div>
+                                <div class="skill-copy">
+                                    <span class="skill-tag">Frontend</span>
+                                    <h4>CSS</h4>
+                                    <p>Styling responsive interfaces with spacing, color, and layout control.</p>
+                                </div>
+                            </article>
+                            <article class="skill-slide">
+                                <div class="skill-image-frame">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript logo">
+                                </div>
+                                <div class="skill-copy">
+                                    <span class="skill-tag">Frontend</span>
+                                    <h4>JavaScript</h4>
+                                    <p>Adding interactivity, logic, and dynamic behavior to web pages.</p>
+                                </div>
+                            </article>
+                            <article class="skill-slide">
+                                <div class="skill-image-frame">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap logo">
+                                </div>
+                                <div class="skill-copy">
+                                    <span class="skill-tag">Frontend</span>
+                                    <h4>Bootstrap</h4>
+                                    <p>Speeding up polished UI work with a structured component system.</p>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="skill-carousel-controls">
+                            <button type="button" class="skill-arrow" data-carousel-prev aria-label="Previous frontend skill"><i class="fas fa-chevron-left"></i></button>
+                            <div class="skill-dots">
+                                <button type="button" class="skill-dot is-active" data-carousel-dot aria-label="Show HTML slide"></button>
+                                <button type="button" class="skill-dot" data-carousel-dot aria-label="Show CSS slide"></button>
+                                <button type="button" class="skill-dot" data-carousel-dot aria-label="Show JavaScript slide"></button>
+                                <button type="button" class="skill-dot" data-carousel-dot aria-label="Show Bootstrap slide"></button>
                             </div>
+                            <button type="button" class="skill-arrow" data-carousel-next aria-label="Next frontend skill"><i class="fas fa-chevron-right"></i></button>
+                        </div>
+                    </article>
+
+                    <article class="skill-panel skill-carousel" data-reveal data-carousel>
+                        <div class="skill-panel-head">
+                            <div class="panel-icon"><i class="fas fa-server"></i></div>
                             <div>
-                                <h4>Phone</h4>
-                                <p>08878141014</p>
+                                <h3>Backend Development</h3>
+                                <p>Languages I use for logic, server work, and application flow.</p>
                             </div>
                         </div>
 
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-map-marker-alt"></i>
+                        <div class="skill-slides">
+                            <article class="skill-slide is-active">
+                                <div class="skill-image-frame">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java logo">
+                                </div>
+                                <div class="skill-copy">
+                                    <span class="skill-tag">Backend</span>
+                                    <h4>Java</h4>
+                                    <p>Building structured application logic with object-oriented development.</p>
+                                </div>
+                            </article>
+                            <article class="skill-slide">
+                                <div class="skill-image-frame">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python logo">
+                                </div>
+                                <div class="skill-copy">
+                                    <span class="skill-tag">Backend</span>
+                                    <h4>Python</h4>
+                                    <p>Creating practical backend features and automation-friendly workflows.</p>
+                                </div>
+                            </article>
+                            <article class="skill-slide">
+                                <div class="skill-image-frame">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP logo">
+                                </div>
+                                <div class="skill-copy">
+                                    <span class="skill-tag">Backend</span>
+                                    <h4>PHP</h4>
+                                    <p>Handling dynamic pages, forms, and server-side application behavior.</p>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="skill-carousel-controls">
+                            <button type="button" class="skill-arrow" data-carousel-prev aria-label="Previous backend skill"><i class="fas fa-chevron-left"></i></button>
+                            <div class="skill-dots">
+                                <button type="button" class="skill-dot is-active" data-carousel-dot aria-label="Show Java slide"></button>
+                                <button type="button" class="skill-dot" data-carousel-dot aria-label="Show Python slide"></button>
+                                <button type="button" class="skill-dot" data-carousel-dot aria-label="Show PHP slide"></button>
                             </div>
+                            <button type="button" class="skill-arrow" data-carousel-next aria-label="Next backend skill"><i class="fas fa-chevron-right"></i></button>
+                        </div>
+                    </article>
+
+                    <article class="skill-panel skill-carousel" data-reveal data-carousel>
+                        <div class="skill-panel-head">
+                            <div class="panel-icon"><i class="fas fa-database"></i></div>
                             <div>
-                                <h4>Location</h4>
-                                <p>Phnom Penh, Cambodia</p>
+                                <h3>Data and Infrastructure</h3>
+                                <p>Core tools for storage, containers, and deployment-ready systems.</p>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="social-links">
-                        <span>Connect with me:</span>
-                        <a href="https://www.facebook.com/share/1ASYTyZfDB/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="https://www.instagram.com/lek_sinat?igsh=NzltdDFlczA2cGsx&utm_source=qr" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="https://t.me/sinatlek" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
-                            <i class="fab fa-telegram-plane"></i>
-                        </a>
-                        <a href="https://github.com/LEKSINAT" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </div>
-                </div>
+                        <div class="skill-slides">
+                            <article class="skill-slide is-active">
+                                <div class="skill-image-frame">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL logo">
+                                </div>
+                                <div class="skill-copy">
+                                    <span class="skill-tag">Data</span>
+                                    <h4>MySQL</h4>
+                                    <p>Managing structured data with relational database design and queries.</p>
+                                </div>
+                            </article>
+                            <article class="skill-slide">
+                                <div class="skill-image-frame">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" alt="Redis logo">
+                                </div>
+                                <div class="skill-copy">
+                                    <span class="skill-tag">Infrastructure</span>
+                                    <h4>Redis</h4>
+                                    <p>Using fast in-memory storage for caching and performance support.</p>
+                                </div>
+                            </article>
+                            <article class="skill-slide">
+                                <div class="skill-image-frame">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker logo">
+                                </div>
+                                <div class="skill-copy">
+                                    <span class="skill-tag">Infrastructure</span>
+                                    <h4>Docker</h4>
+                                    <p>Packaging applications into portable environments for smoother delivery.</p>
+                                </div>
+                            </article>
+                        </div>
 
-                <div class="contact-form">
-                    <h3>Send Me a Message</h3>
-                    <form id="contact-form">
-                        <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        <div class="skill-carousel-controls">
+                            <button type="button" class="skill-arrow" data-carousel-prev aria-label="Previous infrastructure skill"><i class="fas fa-chevron-left"></i></button>
+                            <div class="skill-dots">
+                                <button type="button" class="skill-dot is-active" data-carousel-dot aria-label="Show MySQL slide"></button>
+                                <button type="button" class="skill-dot" data-carousel-dot aria-label="Show Redis slide"></button>
+                                <button type="button" class="skill-dot" data-carousel-dot aria-label="Show Docker slide"></button>
+                            </div>
+                            <button type="button" class="skill-arrow" data-carousel-next aria-label="Next infrastructure skill"><i class="fas fa-chevron-right"></i></button>
                         </div>
-                        <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </article>
+
+                    <article class="skill-panel skill-carousel" data-reveal data-carousel>
+                        <div class="skill-panel-head">
+                            <div class="panel-icon"><i class="fas fa-toolbox"></i></div>
+                            <div>
+                                <h3>Workflow and Collaboration</h3>
+                                <p>Tools I use to organize work, test APIs, and collaborate with teams.</p>
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+
+                        <div class="skill-slides">
+                            <article class="skill-slide is-active">
+                                <div class="skill-image-frame">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub logo">
+                                </div>
+                                <div class="skill-copy">
+                                    <span class="skill-tag">Workflow</span>
+                                    <h4>GitHub</h4>
+                                    <p>Tracking code, version changes, and team collaboration in one place.</p>
+                                </div>
+                            </article>
+                            <article class="skill-slide">
+                                <div class="skill-image-frame">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" alt="Postman logo">
+                                </div>
+                                <div class="skill-copy">
+                                    <span class="skill-tag">Testing</span>
+                                    <h4>Postman</h4>
+                                    <p>Testing APIs, checking responses, and exploring backend endpoints.</p>
+                                </div>
+                            </article>
+                            <article class="skill-slide">
+                                <div class="skill-image-frame">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg" alt="Jira logo">
+                                </div>
+                                <div class="skill-copy">
+                                    <span class="skill-tag">Planning</span>
+                                    <h4>Jira</h4>
+                                    <p>Organizing tasks, priorities, and project progress with a team workflow.</p>
+                                </div>
+                            </article>
                         </div>
-                        <div class="form-group">
-                            <textarea id="message" name="message" rows="5" placeholder="Your Message"
-                                required></textarea>
+
+                        <div class="skill-carousel-controls">
+                            <button type="button" class="skill-arrow" data-carousel-prev aria-label="Previous workflow skill"><i class="fas fa-chevron-left"></i></button>
+                            <div class="skill-dots">
+                                <button type="button" class="skill-dot is-active" data-carousel-dot aria-label="Show GitHub slide"></button>
+                                <button type="button" class="skill-dot" data-carousel-dot aria-label="Show Postman slide"></button>
+                                <button type="button" class="skill-dot" data-carousel-dot aria-label="Show Jira slide"></button>
+                            </div>
+                            <button type="button" class="skill-arrow" data-carousel-next aria-label="Next workflow skill"><i class="fas fa-chevron-right"></i></button>
                         </div>
-                        <button type="submit" class="btn btn-primary">SEND MESSAGE</button>
-                    </form>
+                    </article>
                 </div>
             </div>
-        </div>
-    </section>
-    </form>
-    </div>
-    </section>
+        </section>
 
-    <!-- Footer -->
+        <section id="journey" class="section journey-section">
+            <div class="container">
+                <div class="section-heading" data-reveal>
+                    <p class="eyebrow">Learning Journey</p>
+                    <h2>Growth through workshops, visits, and real experiences.</h2>
+                    <p class="section-intro">
+                        Beyond classwork, I learn by observing teams, exploring new environments, and joining
+                        experiences that strengthen how I think and work.
+                    </p>
+                </div>
+
+                <div id="workshop" class="journey-block" data-reveal>
+                    <div class="subheading">
+                        <h3>Workshops</h3>
+                        <p>Moments that expanded my problem-solving mindset and teamwork experience.</p>
+                    </div>
+                    <div class="feature-grid">
+                        <article class="feature-card">
+                            <div class="feature-image">
+                                <img src="./img/workshop/DevOp.jpg" alt="DevOps workshop">
+                            </div>
+                            <div class="feature-copy">
+                                <span>Workshop</span>
+                                <h4>DevOps Workshop</h4>
+                                <p>
+                                    I explored collaboration, workflow improvement, and modern development practices in
+                                    a practical team-based environment.
+                                </p>
+                            </div>
+                        </article>
+                        <article class="feature-card">
+                            <div class="feature-image">
+                                <img src="./img/workshop/Stem.jpg" alt="STEM workshop">
+                            </div>
+                            <div class="feature-copy">
+                                <span>Workshop</span>
+                                <h4>STEM Workshop</h4>
+                                <p>
+                                    This experience strengthened my curiosity, confidence, and ability to learn
+                                    through shared activities and hands-on thinking.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <div id="company" class="journey-block" data-reveal>
+                    <div class="subheading">
+                        <h3>Company Visits</h3>
+                        <p>Industry visits that helped me understand teamwork, culture, and professional systems.</p>
+                    </div>
+                    <div class="visit-grid">
+                        <article class="visit-card">
+                            <img src="./img/company-visit/Codingate.jpg" alt="Visit to Codingate">
+                            <div class="visit-copy">
+                                <span>Technology</span>
+                                <h4>Codingate</h4>
+                                <p>Showed me how digital teams collaborate to build practical and useful solutions.</p>
+                            </div>
+                        </article>
+                        <article class="visit-card">
+                            <img src="./img/company-visit/JTrust Royal Bank.jpg" alt="Visit to J Trust Royal Bank">
+                            <div class="visit-copy">
+                                <span>Finance</span>
+                                <h4>J Trust Royal Bank</h4>
+                                <p>Helped me understand trust, structure, and the value of professional systems.</p>
+                            </div>
+                        </article>
+                        <article class="visit-card">
+                            <img src="./img/company-visit/Bread.jpg" alt="Visit to Bread company">
+                            <div class="visit-copy">
+                                <span>Business</span>
+                                <h4>Bread</h4>
+                                <p>Gave insight into branding, presentation, and strong customer connection.</p>
+                            </div>
+                        </article>
+                        <article class="visit-card">
+                            <img src="./img/company-visit/Chip Mong.jpg" alt="Visit to Chip Mong company">
+                            <div class="visit-copy">
+                                <span>Industry</span>
+                                <h4>Chip Mong</h4>
+                                <p>Showed how strong organization supports growth in a large company environment.</p>
+                            </div>
+                        </article>
+                        <article class="visit-card">
+                            <img src="./img/company-visit/Dai Chi Life.jpg" alt="Visit to Dai Chi Life company">
+                            <div class="visit-copy">
+                                <span>Corporate</span>
+                                <h4>Dai Chi Life</h4>
+                                <p>Helped me see the importance of professionalism, service quality, and trust.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section projects-section">
+            <div class="container">
+                <div class="section-heading" data-reveal>
+                    <p class="eyebrow">Selected Projects</p>
+                    <h2>Some work I'm proud to share.</h2>
+                    <p class="section-intro">
+                        These projects reflect my interest in modern layouts, responsive development, and turning ideas
+                        into interactive experiences.
+                    </p>
+                </div>
+
+                <div class="projects-grid">
+                    <article class="project-card" data-reveal>
+                        <div class="project-media">
+                            <img src="./img/digital.png" alt="Digital Mind project preview">
+                        </div>
+                        <div class="project-body">
+                            <span class="project-tag">Web Application</span>
+                            <h3>Digital Mind</h3>
+                            <p>A modern web application with responsive layout, interactive UI, and a clean visual direction.</p>
+                            <a href="https://final-web-by-sinat.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link">
+                                Visit Project <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-reveal>
+                        <div class="project-media">
+                            <img src="./img/UI-prototype.png" alt="Prototype project preview">
+                        </div>
+                        <div class="project-body">
+                            <span class="project-tag">UI/UX Design</span>
+                            <h3>Prototype</h3>
+                            <p>An interactive smart home dashboard prototype focused on clear control, layout, and visual usability.</p>
+                            <a href="https://www.figma.com/proto/MAypzoOjOrn2RYmQYh2NZV/Untitled?node-id=332-364&t=0OwTAUWJAslQN5IX-1"
+                                target="_blank" rel="noopener noreferrer" class="project-link">
+                                Open Prototype <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-reveal>
+                        <div class="project-media">
+                            <img src="./img/image.png" alt="PNC single website preview">
+                        </div>
+                        <div class="project-body">
+                            <span class="project-tag">Portfolio Website</span>
+                            <h3>PNC Single Website</h3>
+                            <p>A personal website built with HTML, CSS, and JavaScript to showcase projects and skills in a clean format.</p>
+                            <a href="https://my-single-webpage.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link">
+                                View Website <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <div class="contact-layout">
+                    <div class="contact-column" data-reveal>
+                        <p class="contact-meta-title">Contact Info Section</p>
+                        <div class="contact-copy">
+                            <h2>Get in Touch</h2>
+                            <p class="section-intro">
+                                I'm here to discuss your project, internship opportunities, and ways we can create
+                                thoughtful digital work together.
+                            </p>
+
+                            <div class="contact-list">
+                                <article>
+                                    <i class="far fa-envelope"></i>
+                                    <div>
+                                        <span>Email</span>
+                                        <p>Hidden for privacy. Please use the contact form.</p>
+                                    </div>
+                                </article>
+                                <article>
+                                    <i class="fas fa-location-dot"></i>
+                                    <div>
+                                        <span>Location</span>
+                                        <p>Phnom Penh, Cambodia</p>
+                                    </div>
+                                </article>
+                                <article>
+                                    <i class="fas fa-phone"></i>
+                                    <div>
+                                        <span>Phone</span>
+                                        <p>Hidden for privacy. Message me through social media.</p>
+                                    </div>
+                                </article>
+                            </div>
+
+                            <div class="social-links">
+                                <a href="https://www.facebook.com/share/1ASYTyZfDB/?mibextid=wwXIfr" target="_blank"
+                                    rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://www.instagram.com/lek_sinat?igsh=NzltdDFlczA2cGsx&utm_source=qr" target="_blank"
+                                    rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                                <a href="https://t.me/sinatlek" target="_blank" rel="noopener noreferrer" aria-label="Telegram"><i
+                                        class="fab fa-telegram-plane"></i></a>
+                                <a href="https://github.com/LEKSINAT" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i
+                                        class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-column" data-reveal>
+                        <p class="contact-meta-title">Contact Form</p>
+                        <div class="contact-panel">
+                            <form id="contact-form" class="contact-form">
+                                <label class="contact-field">
+                                    <span class="contact-field-label">Your Name</span>
+                                    <input type="text" name="name" placeholder="Your Name*" required>
+                                </label>
+                                <label class="contact-field">
+                                    <span class="contact-field-label">Email Address</span>
+                                    <input type="email" name="email" placeholder="Email Address*" required>
+                                </label>
+                                <label class="contact-field">
+                                    <span class="contact-field-label">Subject</span>
+                                    <input type="text" name="subject" placeholder="Subject or topic" required>
+                                </label>
+                                <label class="contact-field">
+                                    <span class="contact-field-label">Message</span>
+                                    <textarea name="message" rows="5" placeholder="Write your message..." required></textarea>
+                                </label>
+                                <button type="submit" class="button button-primary form-button">Send Message</button>
+                                <p class="form-note" id="form-note" aria-live="polite"></p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
     <footer class="footer">
-        <div class="container">
-            <p>&copy; <span id="current-year"></span> Lek Sinat. All rights reserved.</p>
+        <div class="container footer-inner">
+            <p>&copy; <span id="current-year"></span> Sinat Lek. All rights reserved.</p>
+            <a href="#top">Back to top</a>
         </div>
     </footer>
 
-    <script>
-        // Project Filtering Functionality
-        document.addEventListener('DOMContentLoaded', function () {
-            const filterButtons = document.querySelectorAll('.filter-btn');
-            const projectCards = document.querySelectorAll('.project-card');
-
-            // Add click event to all filter buttons
-            filterButtons.forEach(button => {
-                button.addEventListener('click', function () {
-                    // Remove active class from all buttons
-                    filterButtons.forEach(btn => btn.classList.remove('active'));
-                    // Add active class to clicked button
-                    this.classList.add('active');
-
-                    const filter = this.getAttribute('data-filter');
-
-                    // Show/hide projects based on filter
-                    projectCards.forEach(card => {
-                        if (filter === 'all' || card.classList.contains(filter)) {
-                            card.style.display = 'block';
-                            // Add animation effect
-                            card.style.animation = 'fadeIn 0.5s ease forwards';
-                        } else {
-                            card.style.display = 'none';
-                        }
-                    });
-                });
-            });
-
-            // Add hover effect to project cards
-            projectCards.forEach(card => {
-                card.addEventListener('mouseenter', function () {
-                    this.style.transform = 'translateY(-10px)';
-                    this.style.boxShadow = '0 20px 40px rgba(0,0,0,0.1)';
-                    const img = this.querySelector('img');
-                    if (img) img.style.transform = 'scale(1.05)';
-                });
-
-                card.addEventListener('mouseleave', function () {
-                    this.style.transform = 'translateY(0)';
-                    this.style.boxShadow = '0 10px 30px rgba(0,0,0,0.05)';
-                    const img = this.querySelector('img');
-                    if (img) img.style.transform = 'scale(1)';
-                });
-            });
-
-            // Add animation for project links
-            const projectLinks = document.querySelectorAll('.project-link');
-            projectLinks.forEach(link => {
-                link.addEventListener('mouseenter', function () {
-                    const icon = this.querySelector('i');
-                    if (icon) icon.style.transform = 'translateX(5px)';
-                });
-
-                link.addEventListener('mouseleave', function () {
-                    const icon = this.querySelector('i');
-                    if (icon) icon.style.transform = 'translateX(0)';
-                });
-            });
-        });
-    </script>
-
-    <style>
-        /* Add fadeIn animation for project cards */
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        /* Add transition for filter buttons */
-        .filter-btn {
-            transition: all 0.3s ease !important;
-        }
-
-        .filter-btn:hover {
-            transform: translateY(-2px) !important;
-        }
-
-        .filter-btn.active {
-            transform: translateY(-2px) !important;
-            box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3) !important;
-        }
-    </style>
-    <!-- Image Modal -->
-    <div id="imageModal" class="modal">
-        <span class="close-modal">&times;</span>
-        <img class="modal-content" id="modalImage">
-        <div id="caption"></div>
-    </div>
-
-    <script>
-        // Get the modal and its elements
-        const modal = document.getElementById('imageModal');
-        const modalImg = document.getElementById('modalImage');
-        const closeBtn = document.querySelector('.close-modal');
-
-        // Function to open modal with image
-        function openModal(imgSrc, imgAlt) {
-            modalImg.src = imgSrc;
-            modalImg.alt = imgAlt;
-            modal.classList.add('show');
-            document.body.style.overflow = 'hidden'; // Prevent scrolling when modal is open
-        }
-
-        // Function to close modal
-        function closeModal() {
-            modal.classList.remove('show');
-            document.body.style.overflow = ''; // Re-enable scrolling
-        }
-
-        // When the user clicks on a view certificate button
-        document.querySelectorAll('.view-certificate-btn').forEach((btn, index) => {
-            btn.addEventListener('click', (e) => {
-                e.stopPropagation();
-                const card = btn.closest('.project-card');
-                const img = card.querySelector('img');
-                openModal(img.src, img.alt);
-            });
-        });
-
-        // When the user clicks on a project image
-        document.querySelectorAll('.project-image').forEach(projectImage => {
-            projectImage.onclick = function (e) {
-                e.stopPropagation();
-                const img = this.querySelector('img');
-                openModal(img.src, img.alt);
-            }
-        });
-
-        // When the user clicks on (x), close the modal
-        closeBtn.onclick = function (e) {
-            e.stopPropagation();
-            closeModal();
-        }
-
-        // When the user clicks anywhere on the modal, close it
-        modal.onclick = function (e) {
-            if (e.target === modal) {
-                closeModal();
-            }
-        };
-
-        // Close modal when pressing Escape key
-        document.addEventListener('keydown', function (e) {
-            if (e.key === 'Escape' && modal.classList.contains('show')) {
-                closeModal();
-            }
-        });
-    </script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
